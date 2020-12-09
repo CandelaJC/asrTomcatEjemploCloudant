@@ -15,7 +15,7 @@
 <li><a href="listar">Listar</a></li>
 <li>Palabra en español: <!-- <input type="text" id="palabra_traducir">-->
 <form action="/insertar" method="post">
-<input type="text" id="palabra">
+<input type="text" id="palabra" value="palabra">
 <input type="submit" name="guardar" value="Guardar en Cloudant"></a></li>
 
 </form>
