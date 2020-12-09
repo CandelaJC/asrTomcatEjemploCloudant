@@ -22,6 +22,7 @@ import asr.proyectoFinal.dao.CloudantPalabraStore;
 import asr.proyectoFinal.dominio.Palabra;
 import asr.proyectoFinal.services.Traductor;
 
+
 /**
  * Servlet implementation class Controller
  */
