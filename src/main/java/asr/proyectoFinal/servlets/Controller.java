@@ -20,7 +20,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import asr.proyectoFinal.dao.CloudantPalabraStore;
 import asr.proyectoFinal.dominio.Palabra;
-import asr.proyectoFinal.services.Traductor;
 
 /**
  * Servlet implementation class Controller
@@ -35,7 +34,6 @@ public class Controller extends HttpServlet {
 		out.println("<html><head><meta charset=\"UTF-8\"></head><body>");
 		
 		CloudantPalabraStore store = new CloudantPalabraStore();
-		
 		System.out.println(request.getServletPath());
 		switch(request.getServletPath())
 		{
@@ -44,7 +42,6 @@ public class Controller extends HttpServlet {
 					  out.println("No hay DB");
 				else
 					out.println("Palabras en la BD Cloudant:<br />" + store.getAll());
-					
 				break;
 				
 			case "/insertar":
@@ -63,7 +60,6 @@ public class Controller extends HttpServlet {
 					}
 					else
 					{
-						parametro = Traductor.translate(parametro, "es", "en", false);
 						palabra.setName(parametro);
 						store.persist(palabra);
 					    out.println(String.format("Almacenada la palabra: %s", palabra.getName()));			    	  
