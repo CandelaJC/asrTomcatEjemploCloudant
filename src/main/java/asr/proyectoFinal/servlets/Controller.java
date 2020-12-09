@@ -35,6 +35,7 @@ public class Controller extends HttpServlet {
 		out.println("<html><head><meta charset=\"UTF-8\"></head><body>");
 		
 		CloudantPalabraStore store = new CloudantPalabraStore();
+		
 		System.out.println(request.getServletPath());
 		switch(request.getServletPath())
 		{
@@ -43,6 +44,7 @@ public class Controller extends HttpServlet {
 					  out.println("No hay DB");
 				else
 					out.println("Palabras en la BD Cloudant:<br />" + store.getAll());
+					
 				break;
 				
 			case "/insertar":
