@@ -14,8 +14,7 @@
 <ul>
 <li><a href="listar">Listar</a></li>
 <li>Palabra en español: <input type="text" name="palabra_traducir">
- <input type="button" name="guardar" value="Guardar en Cloudant"> <a href="insertar?palabra=hola"></li>
-
+<a href="insertar?palabra=lion">Insertar</a></li>
 </ul>
 </body>
 </html>
