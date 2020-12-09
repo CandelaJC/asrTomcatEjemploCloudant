@@ -13,7 +13,7 @@
 <p>Opciones:</p>
 <ul>
 <li><a href="listar">Listar</a></li>
-<li>Palabra en español: <a href="insertar?palabra=lion">Guardar en Cloudant</a></li>
+<li>Palabra en español: <a href="insertar?palabra=lion">Guardar en Cloudant sin botón</a></li>
 </ul>
 </body>
 </html>
