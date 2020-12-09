@@ -13,8 +13,14 @@
 <p>Opciones:</p>
 <ul>
 <li><a href="listar">Listar</a></li>
-<li>Palabra en español: <input type="text" id="palabra_traducir">
-<a href="insertar?palabra="+ document.getElementById('palabra_traducir').value><input type="button" name="guardar" value="Guardar en Cloudant"></a></li>
+<li>Palabra en español: <!-- <input type="text" id="palabra_traducir">-->
+<form action="/insertar" method="post">
+<input type="text" id="palabra">
+<input type="submit" name="guardar" value="Guardar en Cloudant"></a></li>
+
+</form>
+<!-- nsertar?palabra="+ document.getElementById('palabra_traducir').value>
+<input type="submit" name="guardar" value="Guardar en Cloudant"></a></li>-->
 </ul>
 </body>
 </html>
