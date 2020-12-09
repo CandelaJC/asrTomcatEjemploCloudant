@@ -7,12 +7,13 @@
 <title>Proyecto ASR new...</title>
 </head>
 <body>
-<h1>Ejemplo de Proyecto de ASR Candela Janeiro ahora con DevOps Prueba</h1>
+<h1>Práctica 11 de ASR Candela Janeiro</h1>
+<h2>Integración con Servicios Cloudant y Watson Language Translator</h2>
 <hr />
 <p>Opciones:</p>
 <ul>
 <li><a href="listar">Listar</a></li>
-<li><a href="insertar?palabra=hola">Insertar</a></li>
+<li>Palabra en español: <a href="insertar?palabra=lion">Insertar</a></li>
 </ul>
 </body>
 </html>
