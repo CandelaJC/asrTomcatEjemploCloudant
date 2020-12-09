@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Proyecto ASR new...</title>
+<title>Práctica 11 ASR</title>
 </head>
 <body>
 <h1>Práctica 11 de ASR Candela Janeiro</h1>
@@ -14,7 +14,7 @@
 <ul>
 <li><a href="listar">Listar</a></li>
 <li>Palabra en español: <input type="text" id="palabra_traducir">
-<a href="insertar?palabra=leon"><input type="button" name="guardar" value="Guardar en Cloudant"></a></li>
+<a href="insertar?palabra="+ document.getElementById("palabra_traducir").value><input type="button" name="guardar" value="Guardar en Cloudant"></a></li>
 </ul>
 </body>
 </html>
