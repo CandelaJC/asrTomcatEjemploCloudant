@@ -13,7 +13,9 @@
 <p>Opciones:</p>
 <ul>
 <li><a href="listar">Listar</a></li>
-<li>Palabra en español: <a href="insertar?palabra=lion">Guardar en Cloudant sin botón</a></li>
+<li>Palabra en español: <input type="text" name="palabra_traducir">
+ <input type="button" name="guardar" value="insertar?palabra=hola"></li>
+
 </ul>
 </body>
 </html>
