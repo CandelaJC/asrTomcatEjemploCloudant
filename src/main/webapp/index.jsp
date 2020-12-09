@@ -13,8 +13,8 @@
 <p>Opciones:</p>
 <ul>
 <li><a href="listar">Listar</a></li>
-<li>Palabra en español: <input type="text" name="palabra_traducir">
-<a href="insertar?palabra=lion"><input type="button" name="guardar" value="Guardar en Cloudant"></a></li>
+<li>Palabra en español: <input type="text" id="palabra_traducir">
+<a href="insertar?palabra=" + document.getElementById("palabra_traducir").value><input type="button" name="guardar" value="Guardar en Cloudant"></a></li>
 </ul>
 </body>
 </html>
