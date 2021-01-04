@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1>Proyecto de ASR Candela Janeiro</h1>
-<h2>Integración con Servicios Cloudant con Watson Language Translator</h2>
+<h2>Integración con Servicios Cloudant con Watson Language Translator, Watson Text to Speech</h2>
 <hr />
 <p>Opciones:</p>
 <ul>
@@ -19,6 +19,8 @@
 <input type="submit" name="guardar" value="Guardar en Cloudant"></a></li>
 
 </form>
+<li><a href="escuchar">Escuchar</a></li>
+
 <!-- nsertar?palabra="+ document.getElementById('palabra_traducir').value>
 <input type="submit" name="guardar" value="Guardar en Cloudant"></a></li>-->
 </ul>
