@@ -7,8 +7,8 @@
 <title>Práctica 11 ASR</title>
 </head>
 <body>
-<h1>Práctica 11 de ASR Candela Janeiro</h1>
-<h2>Integración con Servicios Cloudant y Watson Language Translator</h2>
+<h1>Proyecto de ASR Candela Janeiro</h1>
+<h2>Integración con Servicios Cloudant con Watson Language Translator</h2>
 <hr />
 <p>Opciones:</p>
 <ul>
