@@ -38,9 +38,9 @@ public class ControllerEscuchar extends HttpServlet {
 			
 			case "/escuchar":
 				byte[] audio ;
-				audio = Text2Speech.escuchar("Hola mundo");
+				String parametro = request.getParameter("texto");
+				audio = Text2Speech.escuchar("parametro");
 				response.getOutputStream().write(audio);
-			    //out.println(String.format("Procedemos a descargar el texto"));
 				break;
 		}
 	}

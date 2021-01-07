@@ -12,18 +12,20 @@
 <hr />
 <p>Opciones:</p>
 <ul>
+
 <li><a href="listar">Listar</a></li>
-<li>Palabra en español: <!-- <input type="text" id="palabra_traducir">-->
 
 <form action="/insertar" method="get">
-<input type="text" name="palabra" id="palabra" value="palabra">
-<input type="submit" name="guardar" value="Traducir y guardar en Cloudant"></a></li>
+Palabra en español para traducir: <input type="text" name="palabra" id="palabra">
+<input type="submit" name="guardar" value="Traducir y guardar en Cloudant">
 </form>
 
+<form action="/escuchar" method="get">
+<input type="text" name="texto" id="texto" value="Inserte el texto que desea escuchar">
+<input type="submit" name="a_escuchar" value="Generar audio">
+</form>
 <audio controls src="escuchar"></audio>
 
-<!-- nsertar?palabra="+ document.getElementById('palabra_traducir').value>
-<input type="submit" name="guardar" value="Guardar en Cloudant"></a></li>-->
 </ul>
 </body>
 </html>
