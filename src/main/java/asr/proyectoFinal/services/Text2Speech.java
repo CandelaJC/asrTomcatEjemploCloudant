@@ -39,10 +39,10 @@ public class Text2Speech
 
 			  InputStream inputStream =
 			    textToSpeech.synthesize(synthesizeOptions).execute().getResult();
-			  InputStream in = WaveUtils.reWriteWaveHeader(inputStream);
+			  //InputStream in = WaveUtils.reWriteWaveHeader(inputStream);
 			  salida = WaveUtils.toByteArray(inputStream);
 
-			  OutputStream out = new FileOutputStream("hello_world.wav");
+			  /*OutputStream out = new FileOutputStream("hello_world.wav");
 			  byte[] buffer = new byte[1024];
 			  int length;
 			  while ((length = in.read(buffer)) > 0) {
@@ -50,7 +50,7 @@ public class Text2Speech
 			  }
 
 			  out.close();
-			  in.close();
+			  in.close();*/
 			  inputStream.close();
 			} catch (IOException e) {
 			  e.printStackTrace();
