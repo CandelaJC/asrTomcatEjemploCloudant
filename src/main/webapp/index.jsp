@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Práctica 11 ASR</title>
+<title>Proyecto ASR</title>
 </head>
 <body>
 <h1>Proyecto de ASR Candela Janeiro</h1>
@@ -27,8 +27,11 @@ Palabra en español para traducir: <input type="text" name="palabra" id="palabra"
 Inserte el texto que desea escuchar <input type="text" name="texto" id="texto">
 <input type="submit" name="a_escuchar" value="Generar audio">
 </form>
-<audio controls src="escuchar"></audio>
 </li>
+
+<li>Elija un audio para pasar a texto: <input type="file" id="myfile" name="myfile">
+<audio controls src="myfile"></audio> 
+<a href="hablar">Pasar a texto</a>
 
 </ul>
 </body>
