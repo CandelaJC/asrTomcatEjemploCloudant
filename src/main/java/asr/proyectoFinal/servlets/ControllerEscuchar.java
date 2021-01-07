@@ -1,16 +1,8 @@
 package asr.proyectoFinal.servlets;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.FileWriter;
+
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.PrintWriter;
-import java.nio.Buffer;
-import java.nio.file.Files;
-import java.util.List;
+
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -18,10 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import asr.proyectoFinal.dao.CloudantPalabraStore;
-import asr.proyectoFinal.dominio.Palabra;
 import asr.proyectoFinal.services.Text2Speech;
-import asr.proyectoFinal.services.Traductor;
 
 
 /**
@@ -39,7 +28,7 @@ public class ControllerEscuchar extends HttpServlet {
 			case "/escuchar":
 				byte[] audio ;
 				String parametro = request.getParameter("texto");
-				audio = Text2Speech.escuchar("parametro");
+				audio = Text2Speech.escuchar(parametro);
 				response.getOutputStream().write(audio);
 				break;
 		}

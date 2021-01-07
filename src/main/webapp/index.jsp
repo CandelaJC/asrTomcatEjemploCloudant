@@ -15,16 +15,20 @@
 
 <li><a href="listar">Listar</a></li>
 
+<li>
 <form action="/insertar" method="get">
 Palabra en español para traducir: <input type="text" name="palabra" id="palabra">
 <input type="submit" name="guardar" value="Traducir y guardar en Cloudant">
 </form>
+</li>
 
+<li>
 <form action="/escuchar" method="get">
 <input type="text" name="texto" id="texto" value="Inserte el texto que desea escuchar">
 <input type="submit" name="a_escuchar" value="Generar audio">
 </form>
 <audio controls src="escuchar"></audio>
+</li>
 
 </ul>
 </body>
