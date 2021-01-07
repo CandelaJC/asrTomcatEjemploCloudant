@@ -40,7 +40,7 @@ public class Text2Speech
 			  InputStream inputStream =
 			    textToSpeech.synthesize(synthesizeOptions).execute().getResult();
 			  InputStream in = WaveUtils.reWriteWaveHeader(inputStream);
-			  salida = WaveUtils.toByteArray(in);
+			  salida = WaveUtils.toByteArray(inputStream);
 
 			  OutputStream out = new FileOutputStream("hello_world.wav");
 			  byte[] buffer = new byte[1024];
