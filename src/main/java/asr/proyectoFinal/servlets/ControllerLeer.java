@@ -40,7 +40,7 @@ public class ControllerLeer extends HttpServlet {
 							
 			case "/leer":
 				texto = Speech2Text.leer(parametro);
-				out.println(String.format("La transcripcion del audio es la siguiente: %s", texto));
+				out.println("La transcripcion del audio es la siguiente:" + texto);
 				break;
 				    	  
 		}
