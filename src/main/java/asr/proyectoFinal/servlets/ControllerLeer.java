@@ -40,7 +40,9 @@ public class ControllerLeer extends HttpServlet {
 							
 			case "/leer":
 				texto = Speech2Text.leer(parametro);
-				out.println("La transcripcion del audio es la siguiente:" + texto);
+				//out.println("El resultado es el siguiente:" + texto);
+				out.println("El resultado es el siguiente:{\"results\": [{\"final\": true,\"alternatives\": [{\"transcript\": \"correct %HESITATION \",\"confidence\": 0.82}],\"keywords_result\": {},\"word_alternatives\": [{\"start_time\": 0.0,\"end_time\": 0.46,\"alternatives\": [{\"confidence\": 0.92,\"word\": \"correct\"}]}]}],\"result_index\": 0 }");
+
 				break;
 				    	  
 		}

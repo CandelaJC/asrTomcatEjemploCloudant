@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1>Proyecto de ASR Candela Janeiro</h1>
-<h2>Integración con Servicios Cloudant con Watson Language Translator, Watson Text to Speech</h2>
+<h2>Integración con Servicios Cloudant con Watson Language Translator, Watson Text to Speech y Watson Speech to Text</h2>
 <hr />
 <p>Opciones:</p>
 <ul>
