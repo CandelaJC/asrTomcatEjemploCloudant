@@ -29,12 +29,7 @@ Inserte el texto que desea escuchar <input type="text" name="texto" id="texto">
 </form>
 </li>
 
-<li>
-<form action="/leer" method="get">
-Elija un audio para pasar a texto (tiene que tener formato .wav): <input type="file" id="myfile" name="myfile">
-<input type="submit" name="a_leer" value="Generar texto">
-</form>
-</li>
+<li><a href="leer">Transcripción audio descargado</a></li>
 
 
 </ul>

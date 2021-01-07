@@ -39,9 +39,6 @@ public class ControllerLeer extends HttpServlet {
 		{
 							
 			case "/leer":
-				System.out.println("Parametro: " + request.getParameter("myfile"));
-				//parametro = request.getParameter("myfile");
-				System.out.println(parametro);
 				texto = Speech2Text.leer(parametro);
 				out.println(String.format("La transcripcion del audio es la siguiente: %s", texto));
 				break;
