@@ -28,7 +28,7 @@ import com.ibm.watson.text_to_speech.v1.util.WaveUtils;
 
 public class Speech2Text
 {
-	public static String hablar(String texto){
+	public static String hablar(){
 	
 		IamAuthenticator authenticator = new IamAuthenticator("ZHpjjI8h5DF7YOdBPuwxG7MwRaVJu262TpuyEq_o0khi");
 		SpeechToText speechToText = new SpeechToText(authenticator);
@@ -38,7 +38,7 @@ public class Speech2Text
 		try {
 			  RecognizeOptions recognizeOptions = new RecognizeOptions.Builder()
 			    .audio(new FileInputStream("audio-file2.flac"))
-			    .contentType("audio/flac")
+			    .contentType("audio/wav")
 			    .wordAlternativesThreshold((float) 0.9)
 			    .keywords(Arrays.asList("colorado", "tornado", "tornadoes"))
 			    .keywordsThreshold((float) 0.5)

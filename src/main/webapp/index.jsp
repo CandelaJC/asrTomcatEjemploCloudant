@@ -24,7 +24,7 @@ Palabra en español para traducir: <input type="text" name="palabra" id="palabra"
 
 <li>
 <form action="/escuchar" method="get">
-<input type="text" name="texto" id="texto" value="Inserte el texto que desea escuchar">
+Inserte el texto que desea escuchar <input type="text" name="texto" id="texto">
 <input type="submit" name="a_escuchar" value="Generar audio">
 </form>
 <audio controls src="escuchar"></audio>
