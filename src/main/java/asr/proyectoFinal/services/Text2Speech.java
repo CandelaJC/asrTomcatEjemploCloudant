@@ -22,7 +22,7 @@ import com.ibm.watson.text_to_speech.v1.util.WaveUtils;
 
 public class Text2Speech
 {
-	public static byte[] synthesize(String texto){
+	public static byte[] escuchar(String texto){
 	
 		IamAuthenticator authenticator = new IamAuthenticator("ZyoQgMtuqSYaEnpGXAYYu-UmfcDN7hrfwTjfzZEQ4Z3_");
 		TextToSpeech textToSpeech = new TextToSpeech(authenticator);
