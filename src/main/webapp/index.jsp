@@ -19,7 +19,7 @@
 <input type="submit" name="guardar" value="Guardar en Cloudant"></a></li>
 
 </form>
-<li><a href="escuchar">Escuchar</a></li>
+<audio controls src="escuchar"></audio>
 
 <!-- nsertar?palabra="+ document.getElementById('palabra_traducir').value>
 <input type="submit" name="guardar" value="Guardar en Cloudant"></a></li>-->
