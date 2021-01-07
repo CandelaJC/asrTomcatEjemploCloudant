@@ -1,5 +1,6 @@
 package asr.proyectoFinal.services;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -28,7 +29,7 @@ import com.ibm.watson.text_to_speech.v1.util.WaveUtils;
 
 public class Speech2Text
 {
-	public static String hablar(){
+	public static String leer(String audio){
 	
 		IamAuthenticator authenticator = new IamAuthenticator("ZHpjjI8h5DF7YOdBPuwxG7MwRaVJu262TpuyEq_o0khi");
 		SpeechToText speechToText = new SpeechToText(authenticator);
@@ -37,7 +38,7 @@ public class Speech2Text
 		
 		try {
 			  RecognizeOptions recognizeOptions = new RecognizeOptions.Builder()
-			    .audio(new FileInputStream("audio-file2.flac"))
+			    .audio(new FileInputStream(audio))
 			    .contentType("audio/wav")
 			    .wordAlternativesThreshold((float) 0.9)
 			    .keywords(Arrays.asList("colorado", "tornado", "tornadoes"))
