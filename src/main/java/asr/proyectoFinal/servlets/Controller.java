@@ -27,7 +27,7 @@ import asr.proyectoFinal.services.Traductor;
 /**
  * Servlet implementation class Controller
  */
-@WebServlet(urlPatterns = {"/listar", "/insertar", "/hablar"})
+@WebServlet(urlPatterns = {"/listar", "/insertar", "/hablar", "/escuchar"})
 public class Controller extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
