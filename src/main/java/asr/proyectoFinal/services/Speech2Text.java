@@ -50,7 +50,7 @@ public class Speech2Text
 			  
 			  salida = speechRecognitionResults.toString();
 			  
-			  System.out.println(speechRecognitionResults);
+			  System.out.println(speechRecognitionResults.toString().indexOf("transcription"));
 			  } catch (FileNotFoundException e) {
 			    e.printStackTrace();
 			  }		
