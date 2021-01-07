@@ -22,17 +22,17 @@ import com.ibm.watson.text_to_speech.v1.util.WaveUtils;
 
 public class Text2Speech
 {
-	public static void synthesize(String texto){
+	public static byte[] synthesize(String texto){
 	
 		IamAuthenticator authenticator = new IamAuthenticator("ZyoQgMtuqSYaEnpGXAYYu-UmfcDN7hrfwTjfzZEQ4Z3_");
 		TextToSpeech textToSpeech = new TextToSpeech(authenticator);
 		textToSpeech.setServiceUrl("https://api.eu-gb.text-to-speech.watson.cloud.ibm.com/instances/ea58e741-aa9d-4625-9aff-a9767f7d893b");
-				
+		byte[] salida = null;
 		
 		try {
 			  SynthesizeOptions synthesizeOptions =
 			    new SynthesizeOptions.Builder()
-			      .text("Hello world")
+			      .text(texto)
 			      .accept("audio/wav")
 			      .voice("en-US_AllisonV3Voice")
 			      .build();
@@ -40,6 +40,7 @@ public class Text2Speech
 			  InputStream inputStream =
 			    textToSpeech.synthesize(synthesizeOptions).execute().getResult();
 			  InputStream in = WaveUtils.reWriteWaveHeader(inputStream);
+			  salida = WaveUtils.toByteArray(in);
 
 			  OutputStream out = new FileOutputStream("hello_world.wav");
 			  byte[] buffer = new byte[1024];
@@ -55,6 +56,6 @@ public class Text2Speech
 			  e.printStackTrace();
 			}
 		
-		return;
+		return salida;
 	}
 }

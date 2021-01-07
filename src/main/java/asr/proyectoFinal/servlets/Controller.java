@@ -71,8 +71,10 @@ public class Controller extends HttpServlet {
 				}
 				break;
 			case "/escuchar":
-				Text2Speech.synthesize("Hola mundo");
-			    out.println(String.format("Procedemos a descargar el texto"));			    	  
+				byte[] audio ;
+				audio = Text2Speech.synthesize("Hola mundo");
+				response.getOutputStream().write(audio);
+			    //out.println(String.format("Procedemos a descargar el texto"));			    	  
 		}
 		out.println("</html>");
 	}
