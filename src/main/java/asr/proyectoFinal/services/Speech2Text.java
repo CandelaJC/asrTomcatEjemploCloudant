@@ -34,7 +34,7 @@ public class Speech2Text
 		IamAuthenticator authenticator = new IamAuthenticator("ZHpjjI8h5DF7YOdBPuwxG7MwRaVJu262TpuyEq_o0khi");
 		SpeechToText speechToText = new SpeechToText(authenticator);
 		speechToText.setServiceUrl("https://api.eu-gb.speech-to-text.watson.cloud.ibm.com/instances/3631035b-ff2b-482d-9528-e9d89e4c2871");
-		String salida = null;
+		String salida = "";
 		
 		try {
 			  RecognizeOptions recognizeOptions = new RecognizeOptions.Builder()

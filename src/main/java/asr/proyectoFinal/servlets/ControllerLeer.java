@@ -32,15 +32,18 @@ public class ControllerLeer extends HttpServlet {
 	{
 		PrintWriter out = response.getWriter();
 		out.println("<html><head><meta charset=\"UTF-8\"></head><body>");
+		String parametro = "C:/Users/Cande/Downloads/escuchar.wav";
+		String texto;
 		
 		switch(request.getServletPath())
 		{
 							
 			case "/leer":
-				String parametro = null;
-				parametro = request.getParameter("myfile");
-				String texto = Speech2Text.leer(parametro);
-				out.println(String.format("La transcripción del audio es la siguiente: %s", texto));
+				System.out.println("Parametro: " + request.getParameter("myfile"));
+				//parametro = request.getParameter("myfile");
+				System.out.println(parametro);
+				texto = Speech2Text.leer(parametro);
+				out.println(String.format("La transcripcion del audio es la siguiente: %s", texto));
 				break;
 				    	  
 		}
