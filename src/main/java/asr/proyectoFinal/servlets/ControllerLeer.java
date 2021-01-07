@@ -32,7 +32,7 @@ public class ControllerLeer extends HttpServlet {
 	{
 		PrintWriter out = response.getWriter();
 		out.println("<html><head><meta charset=\"UTF-8\"></head><body>");
-		String parametro = "C:/Users/Cande/Downloads/escuchar.wav";
+		String parametro = "escuchar.wav";
 		String texto;
 		
 		switch(request.getServletPath())
