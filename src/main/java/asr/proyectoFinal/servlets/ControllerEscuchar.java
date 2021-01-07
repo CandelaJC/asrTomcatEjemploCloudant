@@ -27,7 +27,8 @@ public class ControllerEscuchar extends HttpServlet {
 			
 			case "/escuchar":
 				byte[] audio ;
-				String parametro = request.getParameter("texto");
+				String parametro = "Palabra inicial";
+				parametro = request.getParameter("texto");
 				audio = Text2Speech.escuchar(parametro);
 				response.getOutputStream().write(audio);
 				break;

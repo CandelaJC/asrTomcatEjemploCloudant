@@ -20,7 +20,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import asr.proyectoFinal.dao.CloudantPalabraStore;
 import asr.proyectoFinal.dominio.Palabra;
-import asr.proyectoFinal.services.Speech2Text;
 import asr.proyectoFinal.services.Text2Speech;
 import asr.proyectoFinal.services.Traductor;
 
@@ -71,8 +70,7 @@ public class Controller extends HttpServlet {
 					}
 				}
 				break;
-				
-							    	  
+				    	  
 		}
 		out.println("</html>");
 	}
